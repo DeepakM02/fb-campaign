@@ -3,16 +3,16 @@ var router = express.Router();
 const facebook = require("./facebook");
 
 // READ
-router.get('/get', facebook.readCampaign)
+router.get('/getCampaign', facebook.readCampaign)
 
 // POST
-router.post('/post', facebook.createCampaign)
+router.post('/createCampaign', facebook.createCampaign)
 
 // PUT
-router.put('/put', facebook.updateCampaign)
+router.put('/updateCampaign', facebook.updateCampaign)
 
 // DELETE
-router.delete('/delete', facebook.deleteCampaign)
+router.delete('/deleteCampaign', facebook.deleteCampaign)
 
 
 module.exports = router;
